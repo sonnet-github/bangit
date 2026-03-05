@@ -1,0 +1,131 @@
+@use './variables' as *;
+
+:root {
+  interpolate-size: allow-keywords;
+}
+
+body {
+    font-family: $fontInter;
+    background-color: $bgColor;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+    font-weight: 500;
+}
+
+h3,
+h2,
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.8px;
+}
+
+h2,
+h1,
+p {
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: -0.64px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 600;
+    letter-spacing: -0.32px;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+p {
+    @media (max-width: 767px) {
+        font-size: 14px;
+        letter-spacing: -0.28px;
+        font-weight: 500;
+        line-height: 140%;
+    }
+}
+
+h2,
+h1 {
+    @media (max-width: 767px) {
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.48px;
+        font-weight: 600;
+    }
+}
+
+.max-wrap {
+    
+}
+
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hide-mobile {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.hide-desktop {
+    display: none;
+    
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
+.show-mobile {
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
