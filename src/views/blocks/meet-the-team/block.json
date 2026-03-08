@@ -1,13 +1,13 @@
 {
-    "name": "acf/wysiwyg",
-    "title": "WYSIWYG",
-    "description": "Theme styled WYSIWYG block.",
+    "name": "acf/meet-the-team",
+    "title": "Meet the Bang IT Team",
+    "description": "Theme styled Meet the Bang IT Team block.",
     "category": "custom-layout",
     "icon": "text",
-    "keywords": ["wysiwyg", "text", "rich text"],
+    "keywords": ["slide", "meet", "bang", "team"],
     "acf": {
         "mode": "auto",
-        "renderTemplate": "wysiwyg.php"
+        "renderTemplate": "meet-the-team.php"
     },
     "align": "full",
     "supports" : {
@@ -17,7 +17,7 @@
         "attributes": {
             "mode" : "preview",
             "data" : {
-                "preview_image" : "wysiwyg/preview.png"
+                "preview_image" : "meet-the-team/preview.png"
             }
         }
     }

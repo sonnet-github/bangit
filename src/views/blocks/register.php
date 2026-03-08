@@ -19,6 +19,8 @@
             'results-helped-clients',
             'primary-service-insights',
             'primary-service-partner',
+            'inner-page-hero-v1',
+            'meet-the-team',
         ];
 
         foreach($acf_blocks as $block){

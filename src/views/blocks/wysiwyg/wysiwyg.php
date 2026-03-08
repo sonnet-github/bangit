@@ -7,7 +7,6 @@
  * @since SDEV WP Theme 2.0
  */  
 
-
     // Show preview image in preview mode
     if(get_field('preview_image')) :
 
@@ -17,9 +16,9 @@
 ?>
 
     <div class="wysiwyg">
-        <div class="max-wrap margin-auto">
+        <div class="max-wrap margin-auto gutter">
             <div class="wysiwyg__wrap">
-                <?=get_field('wysiwyg_field')?>
+                <?=get_field('wysiwyg')?>
             </div>
         </div>
     </div>

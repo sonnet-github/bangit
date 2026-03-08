@@ -1,6 +1,7 @@
 @use '../../globals/variables' as *;
 
 .homepage-hero {
+    $this: &;
     background-color: rgba(26, 115, 232, 0.20);
     position: relative;
     padding-top: 21px;
@@ -121,6 +122,21 @@
             height: 100%;
             top: 0;
             left: 0;
+        }
+    }
+
+    &--v1 {
+        .vector-image {
+            max-width: none;
+
+            @media (max-width: 1200px) {
+                max-width: 100%;
+            }
+
+            &--2 {
+                bottom: 50px;
+                right: 0;
+            }
         }
     }
 }

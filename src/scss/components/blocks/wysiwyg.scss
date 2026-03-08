@@ -1,49 +1,77 @@
 @use '../../globals/variables' as *;
 
 .wysiwyg {
-    padding-top: 56px;
-    padding-bottom: 56px;
+    font-size: 15px;
+    color: $grey;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 28px;
+    padding-bottom: 75px;
 
-    img {
-        vertical-align: top;
-        margin-top: 56px;
+    .max-wrap {
+        max-width: 1076px;
     }
-
-    h3 {
-        margin-top: 56px;
-        margin-bottom: 56px;
+    
+    h6,
+    h5,
+    h4,
+    h3,
+    h2 {
+        font-size: 30px;
+        line-height: 130%;
+        margin-bottom: 20px;
+        color: $blue3;
+        font-weight: 900;
 
         &:last-child {
             margin-bottom: 0;
         }
+    }
 
-        &:first-child {
-            margin-top: 0;
-        }
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 14px;
     }
 
     p {
-        font-size: 20px;
-        font-weight: 500;
+        margin-bottom: 24px;
 
-        &.small-font {
-            font-size: 13px;
-            line-height: 140%;
-            font-weight: 500;
-            margin-top: 56px;
-            margin-bottom: 56px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ol,
+    ul {
+        padding-left: 20px;
+        margin-bottom: 24px;
+        list-style: disc;
+
+        li {
+            margin-bottom: 10px;
 
             &:last-child {
                 margin-bottom: 0;
             }
-
-            &:first-child {
-                margin-top: 0;
-            }
-
-            a {
-                color: $black;
-            }
         }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    ol {
+        list-style: decimal;
     }
 }

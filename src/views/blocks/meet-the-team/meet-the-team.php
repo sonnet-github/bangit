@@ -1,6 +1,6 @@
 <?php
 /**
- * Common Questions and Answers Block Template
+ * Meet the Bang IT Team Block Template
  *
  * @package SDEV
  * @subpackage SDEV WP
@@ -16,12 +16,9 @@
 
     else :
 ?>
-
-
-
-    <div class="results-helped">
+    <div class="meet-the-team">
         <div class="max-wrap margin-auto gutter">
-            <div class="results-helped__heading text-center">
+            <div class="meet-the-team__heading text-center">
                 <?php if($subHeading): ?>
                     <h3><?=$subHeading?></h3>
                 <?php endif; ?>
@@ -29,43 +26,38 @@
                     <h2><?=$heading?></h2>
                 <?php endif; ?>
             </div>
-            
-            <div class="results-helped__wrap swiper js-slider-container" data-slides-per-view="1">
+
+            <div class="meet-the-team__slide swiper js-slider-container" data-slides-per-view="4" data-space-between="40" data-width="293" data-slides-offset-before="20" data-slides-per-view-tablet="2" data-slides-per-view-small="3" data-slides-per-view-mobile="1">
                 <div class="swiper-wrapper">
-                    <?php while(have_rows('slider')): the_row(); ?>
-                        <div class="results-helped__item swiper-slide">
-                            <div class="results-helped__item-wrap flex gap-20">
-                                <?php if(get_sub_field('image')): ?>
-                                    <div class="results-helped__item-left">
-                                        <img src="<?=get_sub_field('image')['url']?>" alt="<?=get_sub_field('image')['alt']?>" title="<?=get_sub_field('image')['title']?>">
+                    <?php while(have_rows('team_list')): the_row(); ?>
+                        <div class="meet-the-team__item swiper-slide">
+                            <?php if(get_sub_field('image')): ?>
+                                <div class="meet-the-team__image">
+                                    <div class="vector">
+                                        <img src="<?=get_template_directory_uri()?>/assets/images/img-vector-team.png" alt="IMG Vector">
                                     </div>
-                                <?php endif; ?>
-
-                                <?php if(get_sub_field('middle_content')): ?>
-                                    <div class="results-helped__item-mid">
-                                        <?=get_sub_field('middle_content')?>
+                                    <img src="<?=get_sub_field('image')['url']?>" alt="<?=get_sub_field('image')['alt']?>">
+                                </div>
+                            <?php endif; ?>
+                            <div class="meet-the-team__content">
+                                <h3><?=get_sub_field('heading')?></h3>
+                                <h4><?=get_sub_field('subheading')?></h4>
+                            </div>
+                        </div>
+                    <?php endwhile; ?>
+                    <?php while(have_rows('team_list')): the_row(); ?>
+                        <div class="meet-the-team__item swiper-slide">
+                            <?php if(get_sub_field('image')): ?>
+                                <div class="meet-the-team__image">
+                                    <div class="vector">
+                                        <img src="<?=get_template_directory_uri()?>/assets/images/img-vector-team.png" alt="IMG Vector">
                                     </div>
-                                <?php endif; ?>
-
-                                <?php if(have_rows('right_stats')): ?>
-                                    <div class="results-helped__item-right">
-                                        <?php while(have_rows('right_stats')): the_row(); ?>
-                                            <div class="results-helped__item-right-item flex gap-10 items-center">
-                                                <?php if(get_sub_field('image')): ?>
-                                                    <div class="results-helped__item-right-image">
-                                                        <img src="<?=get_sub_field('image')['url']?>" alt="<?=get_sub_field('image')['alt']?>">
-                                                    </div>
-                                                <?php endif; ?>
-
-                                                <?php if(get_sub_field('description')): ?>
-                                                    <div class="results-helped__item-right-description">
-                                                        <?=get_sub_field('description')?>
-                                                    </div>
-                                                <?php endif; ?>
-                                            </div>
-                                        <?php endwhile; ?>
-                                    </div>
-                                <?php endif; ?>
+                                    <img src="<?=get_sub_field('image')['url']?>" alt="<?=get_sub_field('image')['alt']?>">
+                                </div>
+                            <?php endif; ?>
+                            <div class="meet-the-team__content">
+                                <h3><?=get_sub_field('heading')?></h3>
+                                <h4><?=get_sub_field('subheading')?></h4>
                             </div>
                         </div>
                     <?php endwhile; ?>
