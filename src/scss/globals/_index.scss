@@ -5,12 +5,14 @@
 }
 
 body {
-    font-family: $fontInter;
-    background-color: $bgColor;
+    font-family: $primaryFont;
     font-size: 18px;
     line-height: 140%;
     letter-spacing: -0.36px;
     font-weight: 500;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
 }
 
 h3,
@@ -59,6 +61,15 @@ p {
     }
 }
 
+a {
+    color: $blue;
+    transition: $transition;
+
+    &:hover {
+        color: $blue2;
+    }
+}
+
 h2,
 h1 {
     @media (max-width: 767px) {
@@ -86,6 +97,10 @@ h1 {
     justify-content: space-between;
 }
 
+.justify-end {
+    justify-content: end;
+}
+
 .flex-row-reverse {
     flex-direction: row-reverse;
 }
@@ -104,6 +119,14 @@ h1 {
 
 .width-100 {
     width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
 
 img {
@@ -127,5 +150,157 @@ img {
 .show-mobile {
     @media (max-width: 767px) {
         display: block;
+    }
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-25 {
+    gap: 25px;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.gap-50 {
+    gap: 50px;
+}
+
+svg {
+    vertical-align: middle;
+}
+
+.gutter {
+    @media (max-width: 1320px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    #wpadminbar.mobile {
+        display: none !important;
+    }
+
+    html {
+        margin-top: 0 !important;
+    }
+}
+
+.active-navigation {
+    overflow: hidden;
+}
+
+
+// .animate-svg {
+//     stroke-dasharray: 1000;
+//     stroke-dashoffset: 1000;
+//     animation: dash 12s linear infinite;
+//     width: 150%;
+// }
+
+@keyframes animate-svg {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.button {
+    display: inline-block;
+    color: $blue2;
+    padding: 14px 24px;
+    border-radius: 15px;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 16px;
+    text-decoration: none;
+
+    &--primary {
+        background-color: $blue2;
+        color: $white;
+
+        &:hover {
+            color: $white;
+            background-color: $blue;
+        }
+    }
+}
+
+.vector-image {
+    position: absolute;
+    transition: $transition;
+
+    &--1 {
+        right: -40px;
+        bottom: 0;
+        animation: animate-vector 12s linear alternate infinite;
+    }
+
+    &--2 {
+        bottom: 0;
+        right: 70px;
+        animation: animate-vector 6s linear alternate infinite;
+    }
+
+    &--3 {
+        top: 8px;
+        right: 20px;
+        animation: animate-vector 10s linear alternate infinite;
+    }
+
+    &--4 {
+        top: 0;
+        left: -110px;
+        animation: animate-vector 8s linear alternate infinite;
+    }
+}
+
+.page-blocks {
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes animate-vector {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes animate-vector-scale {
+    from {
+        transform: scale(1) translateY(0);
+    }
+    to {
+        transform: scale(1.1) translateY(8%);
+    }
+}
+
+@keyframes animate-homepage-hero {
+    from {
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(0deg);
     }
 }

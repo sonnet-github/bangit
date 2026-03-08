@@ -1,0 +1,24 @@
+{
+    "name": "acf/homepage-hero",
+    "title": "Homepage Hero",
+    "description": "Theme styled Homepage Hero block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["home", "hero"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "homepage-hero.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "cover": "homepage-hero/preview.png",
+            "data" : {
+                "preview_image" : "homepage-hero/preview.png"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "acf/expert-services-reviews",
+    "title": "Expert Services Reviews",
+    "description": "Theme styled Expert Services Reviews block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["expert", "reviews", "services"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "expert-services-reviews.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "expert-services-reviews/preview.png"
+            }
+        }
+    }
+}

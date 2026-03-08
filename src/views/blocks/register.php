@@ -11,6 +11,14 @@
         // Add your ACF Blocks here
         $acf_blocks = [
             'wysiwyg',
+            'homepage-hero',
+            'measuring-success',
+            'expert-it-services',
+            'expert-services-reviews',
+            'common-questions-answers',
+            'results-helped-clients',
+            'primary-service-insights',
+            'primary-service-partner',
         ];
 
         foreach($acf_blocks as $block){

@@ -1,0 +1,64 @@
+{
+    "key": "group_69ad8d75ea1c0",
+    "title": "BLOCK - Primary Service Partner",
+    "fields": [
+        {
+            "key": "field_69ad8d76b528a",
+            "label": "Heading",
+            "name": "heading",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "<h2>Looking for a Primary Service Partner?<\/h2>\r\n<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonmmy nibh euismod tincidunt ut laoreet dolore .<\/p>",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_69ad8de8b528b",
+            "label": "Button",
+            "name": "button",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "allow_in_bindings": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/primary-service-partner"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "display_title": "",
+    "modified": 1772981754
+}

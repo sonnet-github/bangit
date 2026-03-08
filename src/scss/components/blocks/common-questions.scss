@@ -1,0 +1,99 @@
+@use '../../globals/variables' as *;
+
+.common-questions {
+    position: relative;
+    padding-bottom: 83px;
+    z-index: 1;
+
+    .max-wrap {
+        max-width: 1296px;
+    }
+
+    h3 {
+        color: $blue2;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 100%;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 100%;
+        font-weight: 900;
+        color: $blue3;
+        margin-top: 9px;
+        margin-bottom: 25px;
+    }
+
+    &__wrap {
+        gap: 16px 30px;
+        align-items: start;
+
+        & > div {
+            width: calc((100% - 30px) / 2);
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        border: 1px solid #EFEFF1;
+        background: #FAFAFA;
+        padding: 24px 30px;
+        margin-bottom: 16px;
+
+        @media (max-width: 991px) {
+            padding: 20px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-content {
+            position: relative;
+            height: 0;
+            transition: $transition;
+            overflow: hidden;
+            padding-left: 40px;
+        }
+
+        &-heading {
+            cursor: pointer;
+            padding-left: 40px;
+            position: relative;
+
+            &:before {
+                content: '';
+                top: 0;
+                left: 0;
+                width: 23px;
+                height: 23px;
+                background-image: url('~/assets/images/icon-faq-open.svg');
+                position: absolute;
+                pointer-events: none;
+            }
+
+            &.active  {
+                &:before {
+                    background-image: url('~/assets/images/icon-faq-close.svg');
+                }
+            }
+        }
+    }
+
+    .active {
+        .common-questions__item {
+            &-content {
+                height: auto;
+                margin-top: 16px;
+            }
+        }
+    }
+}

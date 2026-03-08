@@ -47,13 +47,18 @@
 
     /* Enqueue FE assets */
     function front_assets(){
-        wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap' );
+        wp_register_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap' );
         wp_register_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css' );
         
         wp_register_style( 'sdev-theme-style', get_template_directory_uri().'/dist/style.css' , array(), rand(111,9999), 'all' );
         wp_register_script( 'sdev-theme-script', get_template_directory_uri().'/dist/bundle.js', array('jquery'), rand(111,9999), true );
+
+        wp_register_style( 'swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css' );
+        wp_register_script( 'swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js');
         
+        wp_enqueue_style( 'swiper-css' );
         wp_enqueue_style( 'sdev-theme-style' );
+        wp_enqueue_script( 'swiper-js' );
         wp_enqueue_script( 'sdev-theme-script' );
         wp_enqueue_style( 'google-fonts');
         wp_enqueue_style( 'fontawesome');

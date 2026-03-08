@@ -1,0 +1,107 @@
+@use '../../globals/variables' as *;
+
+.primary-services-insights {
+    background-color: $grey2;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    h2 {
+        font-size: 30px;
+        line-height: 100%;
+        color: $blue3;
+        font-weight: 900;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .max-wrap {
+        max-width: 1300px;
+    }
+
+    &__heading {
+        max-width: 1006px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: $grey;
+        margin-bottom: 40px;
+    }
+
+    &__wrap {
+        background-color: transparent;
+        padding: 0;
+
+        @media (max-width: 991px) {
+            gap: 20px;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        padding: 0;
+
+        @media (max-width: 991px) {
+            width: calc((100% - 20px) / 2);
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        &-image {
+            background-color: #f8f8f8;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        &-content {
+            padding: 20px 20px 46px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 100%;
+            color: $blue4;
+            margin-bottom: 5px;
+        }
+
+        &-date {
+            margin-bottom: 5px;
+
+            span {
+                display: inline-block;
+                font-size: 13px;
+                font-weight: 600;
+                color: $blue5;
+                line-height: 150%;
+
+                span {
+                    color: $blue2;
+                }
+            }
+        }
+
+        &:hover {
+            .primary-services-insights__description p,
+            .primary-services-insights__item-date span {
+                color: $white;
+            }
+        }
+    }
+
+    &__description {
+        a,
+        p {
+            color: $blue5;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+    }
+}

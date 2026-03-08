@@ -1,0 +1,24 @@
+{
+    "name": "acf/results-helped-clients",
+    "title": "Results We've Helped Clients Achieve",
+    "description": "Theme styled Results We've Helped Clients Achieve block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["slide", "result", "we", "help", "client"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "results-helped-clients.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "results-helped-clients/preview.png"
+            }
+        }
+    }
+}

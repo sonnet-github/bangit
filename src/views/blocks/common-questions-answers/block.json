@@ -1,0 +1,24 @@
+{
+    "name": "acf/common-questions-answers",
+    "title": "Common Questions and Answers",
+    "description": "Theme styled Common Questions and Answers block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["common", "question", "answer", "faq", "accordion"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "common-questions-answers.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "common-questions-answers/preview.png"
+            }
+        }
+    }
+}

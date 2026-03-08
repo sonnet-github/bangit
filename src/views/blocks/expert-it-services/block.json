@@ -1,0 +1,24 @@
+{
+    "name": "acf/expert-it-services",
+    "title": "Expert IT Services",
+    "description": "Theme styled Expert IT Services block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["expert", "it", "services"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "expert-it-services.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "expert-it-services/preview.png"
+            }
+        }
+    }
+}

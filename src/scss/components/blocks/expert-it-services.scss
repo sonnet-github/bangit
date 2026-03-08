@@ -1,0 +1,131 @@
+@use '../../globals/variables' as *;
+
+.expert-it-services {
+    padding-bottom: 50px;
+    position: relative;
+    
+    .max-wrap {
+        max-width: 1296px;
+    }
+
+    h3 {
+        color: $blue2;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 100%;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 100%;
+        font-weight: 900;
+        color: $blue3;
+        margin-top: 12px;
+    }
+
+    &__vector {
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: animate-vector-scale 8s linear alternate infinite;
+            pointer-events: none;
+        }
+    }
+
+    &__wrap {
+        padding: 20px;
+        background-color: $blue6;
+        margin-top: 6px;
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding: 20px 20px 37px;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.10);
+        background-color: $white;
+        border-radius: 10px;
+        overflow: hidden;
+
+        @media (max-width: 991px) {
+            width: calc((100% - 25px) / 2);
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: #0072DA;
+            width: 170%;
+            height: 170%;
+            pointer-events: none;
+            z-index: 0;
+            transition: .6s all ease-out;
+            transform: scale(0);
+            transform-origin: bottom right;
+            border-radius: 100% 100% 0 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        &-image {
+            max-width: 85px;
+        }
+
+        &-inner {
+            position: relative;
+            z-index: 2;
+        }
+
+        &:hover {
+            &:after {
+                transform: scale(3);
+            }
+
+            a {
+                color: $white;
+                transition: $transition;
+
+                h3 {
+                    color: $white;
+                    transition: $transition;
+                }
+            }
+        }
+    }
+
+    a {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 150%;
+        color: $blue5;
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 100%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: $blue4;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        pointer-events: none;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "acf/measuring-success",
+    "title": "Measuring our Success",
+    "description": "Theme styled Measuring our Success block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["measuring", "our", "success"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "measuring-success.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "measuring-success/preview.png"
+            }
+        }
+    }
+}

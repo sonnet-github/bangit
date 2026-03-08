@@ -1,0 +1,24 @@
+{
+    "name": "acf/primary-service-insights",
+    "title": "Primary Service Insights",
+    "description": "Theme styled Primary Service Insights block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["primary", "service", "insights"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "primary-service-insights.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "primary-service-insights/preview.png"
+            }
+        }
+    }
+}
