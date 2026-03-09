@@ -1,0 +1,24 @@
+{
+    "name": "acf/inner-page-hero-v2",
+    "title": "Inner Page Hero v2",
+    "description": "Theme styled Inner Page Hero block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["inner", "hero"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "inner-page-hero-v2.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "cover": "inner-page-hero-v2/preview.png",
+            "data" : {
+                "preview_image" : "homepage-hero/preview.png"
+            }
+        }
+    }
+}

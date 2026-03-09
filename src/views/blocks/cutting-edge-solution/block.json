@@ -1,0 +1,24 @@
+{
+    "name": "acf/cutting-edge-solution",
+    "title": "Cutting Edge Solution",
+    "description": "Theme styled Cutting Edge Solution block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["two", "column", "cutting", "edge", "solution"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "cutting-edge-solution.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "cutting-edge-solution/preview.png"
+            }
+        }
+    }
+}

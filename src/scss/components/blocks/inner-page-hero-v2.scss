@@ -1,0 +1,69 @@
+@use '../../globals/variables' as *;
+
+.inner-page-hero-v2 {
+    padding-top: 142px;
+    padding-bottom: 120px;
+    position: relative;
+
+    @media (max-width: 991px) {
+        padding-top: 60px;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 60px;
+    }
+
+    .max-wrap {
+        position: relative;
+        max-width: 1300px;
+    }
+
+    h1 {
+        font-size: 55px;
+        font-weight: 900;
+        line-height: 84px;
+        color: $blue3;
+    }
+
+    .svg-bg {
+        position: absolute;
+        top: -142px;
+        left: 0;
+        pointer-events: none;
+        z-index: 2;
+        
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 1000;
+        animation: animate-svg 15s linear alternate infinite;
+    }
+
+    &__pagination {
+        ul {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+
+            svg {
+                margin-left: 8px;
+            }
+        }
+    }
+
+    &__bg-image {
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            pointer-events: none;
+            animation: animate-svg-2 15s linear alternate infinite;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+    }
+}

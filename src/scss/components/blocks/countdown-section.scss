@@ -1,0 +1,53 @@
+@use '../../globals/variables' as *;
+
+.countdown-section {
+    padding: 130px 0;
+    background: linear-gradient(90deg, #1B3266 0%, #3664CC 100%);
+
+    .max-wrap {
+        max-width: 1296px;
+    }
+
+    &__wrap {
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        width: calc((100% - 72px) / 3);
+        text-align: center;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.10);
+
+        @media (max-width: 991px) {
+            width: calc((100% - 24px) / 2);
+        }
+
+        h3 {
+            color: $white;
+            font-size: 54px;
+            font-weight: 600;
+            line-height: 64px;
+
+            @media (max-width: 767px) {
+                font-size: 32px;
+                line-height: 120%;
+            }
+        }
+
+        h4 {
+            color: $grey3;
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 600;
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+                line-height: 120%;
+            }
+        }
+    }
+}

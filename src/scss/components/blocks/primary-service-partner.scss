@@ -1,6 +1,7 @@
 @use '../../globals/variables' as *;
 
 .primary-service-partner {
+    $this: &;
     background-color: $grey2;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -33,5 +34,28 @@
         padding-top: 57px;
         padding-bottom: 57px;
         color: $white;
+    }
+
+    &--alt {
+        background-color: transparent;
+        
+        #{$this} {
+
+            &__inner {
+                color: $grey;
+            }
+
+            &__wrap {
+                border-color: $white;
+                background: linear-gradient(0deg, rgba(225, 238, 251, 0.80) 0%, rgba(225, 238, 251, 0.80) 100%);
+                
+                h2 {
+                    color: $blue3;
+                    font-size: 44px;
+                    line-height: 58px;
+                    font-weight: 900;
+                }
+            }
+        }
     }
 }

@@ -105,6 +105,10 @@ h1 {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .justify-end {
     justify-content: end;
 }
@@ -165,6 +169,10 @@ img {
     gap: 10px;
 }
 
+.gap-14 {
+    gap: 14px;
+}
+
 .gap-16 {
     gap: 16px;
 }
@@ -177,6 +185,10 @@ img {
     gap: 30px;
 }
 
+.gap-24 {
+    gap: 24px;
+}
+
 .gap-25 {
     gap: 25px;
 }
@@ -187,6 +199,10 @@ img {
 
 .gap-50 {
     gap: 50px;
+}
+
+.gap-110 {
+    gap: 110px;
 }
 
 svg {
@@ -228,6 +244,18 @@ svg {
     }
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate-svg-2 {
+    0% {
+        transform: rotate(8.5deg) scale(1.6);
+    }
+    50% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(-10deg) scale(1.6);
     }
 }
 

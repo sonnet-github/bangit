@@ -21,6 +21,10 @@
             'primary-service-partner',
             'inner-page-hero-v1',
             'meet-the-team',
+            'inner-page-hero-v2',
+            'cutting-edge-solution',
+            'our-team',
+            'countdown-section',
         ];
 
         foreach($acf_blocks as $block){

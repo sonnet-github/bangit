@@ -8,6 +8,7 @@
  */  
     $heading = get_field('heading') ? get_field('heading') : "";
     $button = get_field('button') ? get_field('button') : "";
+    $alt_version = get_field('alt_version') ? get_field('alt_version') : "";
 
     // Show preview image in preview mode
     if(get_field('preview_image')) :
@@ -17,7 +18,7 @@
     else :
 ?>
 
-    <div class="primary-service-partner">
+    <div class="primary-service-partner <?=($alt_version) ? "primary-service-partner--alt" : ""?>">
         <div class="max-wrap margin-auto gutter">
             <div class="primary-service-partner__wrap">
                 <div class="primary-service-partner__inner gutter text-center">

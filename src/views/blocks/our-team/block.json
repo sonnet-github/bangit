@@ -1,0 +1,24 @@
+{
+    "name": "acf/our-team",
+    "title": "Our team is always here for you",
+    "description": "Theme styled Our team is always here for you block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["our", "team", "listing"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "our-team.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "our-team/preview.png"
+            }
+        }
+    }
+}
