@@ -14,9 +14,7 @@
         <div id="page-content" class="page-blocks" data-tpl="page">
 
             <?php 
-                
                 the_content();
-
             ?>
         
         </div>

@@ -11,8 +11,7 @@
  */
     get_header(); ?>
 
-        <div id="page-content" class="page-blocks" data-tpl="index">
-
+        <div id="page-content" class="page-blocks article-listing-tpl" data-tpl="index">
             <?php 
                 
                 the_content();

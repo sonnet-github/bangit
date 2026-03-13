@@ -1,0 +1,107 @@
+@use '../../globals/variables' as *;
+
+.single-post {
+    position: relative;
+    z-index: 2;
+
+    .max-wrap {
+        max-width: 1296px;
+    }
+
+    &__wrap {
+        
+    }
+
+    &__left {
+        width: 64.044%;
+    }
+
+    &__right {
+        width: 32.099%;
+    }
+
+    &__thumbnail {
+        margin-bottom: 28px;
+
+        img {
+            border-radius: 18px;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 400;
+        color: #0D2746;
+        margin-bottom: 10px;
+        line-height: 26px;
+
+        svg {
+            vertical-align: middle;
+            margin-right: 8px;
+            margin-top: -2px;
+        }
+    }
+
+    &__title {
+        h2 {
+            font-size: 54px;
+            color: #0D2746;
+            font-weight: 600;
+            line-height: 64px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__content {
+        &.wysiwyg {
+            padding-top: 0;
+            font-size: 18px;
+            color: #0D2746;
+        }
+    }
+
+    .two-column-image-post {
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    blockquote {
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(13, 39, 70, 0.40) 1.85%, rgba(13, 39, 70, 0.00) 99.77%);
+        display: block;
+        padding: 40px 36px 4px 120px;
+        position: relative;
+        font-size: 24px;
+        line-height:36px;
+        font-weight: 600;
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:before {
+            content: '';
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 40px;
+            left: 36px;
+            width: 60px;
+            height: 38px;
+            background-image: url('~/assets/images/icon-quote.png');
+        }
+    }
+}

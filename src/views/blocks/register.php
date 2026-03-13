@@ -25,6 +25,10 @@
             'cutting-edge-solution',
             'our-team',
             'countdown-section',
+            'primary-service-listing',
+            'secondary-services-list',
+            'article-listing',
+            'two-column-post-image'
         ];
 
         foreach($acf_blocks as $block){

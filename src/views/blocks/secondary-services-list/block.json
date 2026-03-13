@@ -1,0 +1,24 @@
+{
+    "name": "acf/secondary-services-list",
+    "title": "Secondary Services List",
+    "description": "Theme styled Secondary Services List block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["secondary", "service", "flexible"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "secondary-services-list.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "secondary-services-list/preview.png"
+            }
+        }
+    }
+}

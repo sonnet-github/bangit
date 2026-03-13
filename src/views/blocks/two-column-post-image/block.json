@@ -1,0 +1,25 @@
+{
+    "name": "acf/two-column-post-image",
+    "title": "Two Column Image",
+    "description": "Theme styled Two Column Image block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["two", "column", "image"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "two-column-post-image.php"
+    },
+    "postTypes": ["post"],
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "two-column-post-image/preview.png"
+            }
+        }
+    }
+}

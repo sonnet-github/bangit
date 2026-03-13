@@ -1,0 +1,37 @@
+.tag-cloud {
+    padding: 40px 38px 40px 36px;
+    background-color: #F4F5F6;
+    border-radius: 18px;
+    margin-bottom: 54px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-bottom: 24px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 6px;
+        padding: 8px 18px;
+        background-color: #fff;
+
+        &.active {
+            color: #fff;
+            background-color :#0072DA;
+        }
+    }
+
+    .active {
+        a {
+            color: #fff;
+            background-color :#0072DA;
+        }
+    }
+}

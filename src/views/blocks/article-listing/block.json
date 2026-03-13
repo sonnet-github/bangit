@@ -1,0 +1,24 @@
+{
+    "name": "acf/article-listing",
+    "title": "Article Listing Template",
+    "description": "Theme styled Article Listing Template block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["article", "listing"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "article-listing.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "article-listing/preview.png"
+            }
+        }
+    }
+}
