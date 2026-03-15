@@ -51,7 +51,7 @@
             </div>
 
             <div class="single-post">
-                <div class="max-wrap margin-auto">
+                <div class="max-wrap margin-auto gutter">
 
                     <div class="single-post__wrap flex gap-50">
                         <!-- Left Section -->

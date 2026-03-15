@@ -28,7 +28,10 @@
             'primary-service-listing',
             'secondary-services-list',
             'article-listing',
-            'two-column-post-image'
+            'two-column-post-image',
+            'contact-us-form',
+            'full-width-banner',
+            'case-study-listing'
         ];
 
         foreach($acf_blocks as $block){

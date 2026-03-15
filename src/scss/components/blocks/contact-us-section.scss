@@ -1,0 +1,201 @@
+@use '../../globals/variables' as *;
+
+.contact-us-section {
+    position: relative;
+    padding-bottom: 152px;
+    z-index: 2;
+
+    .max-wrap {
+        max-width: 1296px;
+    }
+
+    &__left {
+        width: 43.905%;
+        
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+    }
+
+    &__right {
+        width: 45.757%;
+        
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+    }
+
+    &__wrap {
+        @media (max-width: 991px) {
+            gap: 20px;
+        }
+
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__form {
+        background-color: #F4F5F6;
+        border-radius: 18px;
+        padding: 40px 36px;
+
+        @media (max-width: 767px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &-description {
+            margin-bottom: 32px;
+            
+            h2 {
+                color: #0A165E;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 36px;
+                margin-bottom: 0;
+            }
+
+            p {
+                color: #585B6F;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px; 
+            }
+        }
+    }
+
+    .form-container {
+        label {
+            display: none !important;
+        }
+
+        textarea {
+            height: 152px;
+        }
+
+        input, textarea {
+            font-family: $primaryFont;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            border: 0;
+            background-color: transparent;
+            outline: none;
+            border-bottom: 1px solid rgba(63, 78, 80, 0.20);
+            resize: none;
+            padding: 12px 0;
+
+            &::placeholder {
+                color: #8A8C9A;
+            }
+        }
+
+        .forminator-edit-module {
+            display: none !important;
+        }
+
+        .forminator-row {
+            margin-bottom: 24px !important;
+        }
+
+        .forminator-row-last {
+            margin-bottom: 0 !important;
+
+            .forminator-button-submit {
+                outline: none;
+                border: 0;
+                background-color: #1F5FAC;
+                border-radius: 6px;
+                text-align: center;
+                width: 100%;
+                display: block;
+                padding: 22px;
+                cursor: pointer;
+                font-family: $primaryFont;
+                color: #FFF;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 14px;
+            }
+        }
+    }
+
+    &__description {
+        margin-bottom: 42px;
+
+        h2 {
+            color: #02267E;
+            font-size: 54px;
+            font-weight: 600;
+            line-height: 64px;
+            margin-bottom: 2px;
+        }
+        p {
+            color: #0D2746;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+    &__contact-details {
+        gap: 64px;
+
+        img {
+            width: 48px;
+            vertical-align: top;
+        }
+
+        h3 {
+            color: #02267E;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__address {
+        max-width: 220px;
+        width: 100%;
+
+        &-description {
+            color: #0D2746;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+
+            a {
+                text-decoration: none;
+            color: #0D2746;
+            }
+        }
+
+        &-image {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__footer {
+        border-top: 1px solid #E3E3EC;
+        margin-top: 24px;
+        padding-top: 16px;
+        color: #0D2746;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .forminator-error-message {
+        background-color: transparent !important;
+        padding: 0 !important;
+        line-height: 120%;
+        color: red !important;
+    }
+
+    &__contact-details {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}

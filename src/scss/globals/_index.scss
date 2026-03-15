@@ -409,3 +409,68 @@ svg {
         }
     }
 }
+
+.project-information {
+    &__head {
+        background-color: #1F5FAC;
+        border-radius: 10px 10px 0 0;
+        padding: 16px 30px;
+        
+        h2 {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+
+    &__content {
+        background-color: #0D2746;
+        border-radius: 0 0 10px 10px;
+        padding: 24px 30px 30px;
+
+    }
+
+    &__item {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        padding-bottom: 12px;
+        margin-bottom: 12px;
+        border-bottom: rgba(255, 255, 255, 0.10) 1px solid;
+
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 400;
+            color: #F6F6F4;
+        }
+
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 14px;
+            color: #fff;
+            margin-top: 6px;
+        }
+    }
+
+    &__image {
+        position: relative;
+        padding: 13px;
+        border-radius: 100%;
+        background-color: #FFF;
+        width: 50px;
+        height: 50px;
+
+        svg {
+            vertical-align: top;
+        }
+    }
+}

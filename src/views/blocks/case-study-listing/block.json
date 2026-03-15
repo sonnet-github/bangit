@@ -1,0 +1,24 @@
+{
+    "name": "acf/case-study-listing",
+    "title": "Case Study Listing",
+    "description": "Theme styled Case Study Listing block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["case", "study", "listing"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "case-study-listing.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "case-study-listing/preview.png"
+            }
+        }
+    }
+}

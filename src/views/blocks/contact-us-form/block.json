@@ -1,0 +1,24 @@
+{
+    "name": "acf/contact-us-form",
+    "title": "Contact Us Template",
+    "description": "Theme styled Contact Us Template block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["contact", "us", "form"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "contact-us-form.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "contact-us-form/preview.png"
+            }
+        }
+    }
+}

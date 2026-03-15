@@ -9,15 +9,38 @@
     }
 
     &__wrap {
-        
+        padding-bottom: 75px;
+
+        @media (max-width: 991px) {
+            gap: 25px;
+        }
+
+        @media (max-width: 767px) {
+            gap: 0;
+            flex-wrap: wrap;
+            padding-bottom: 40px;
+        }
     }
 
     &__left {
         width: 64.044%;
+
+        .wysiwyg {
+            padding-bottom: 0;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding-bottom: 40px;
+        }
     }
 
     &__right {
         width: 32.099%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
 
     &__thumbnail {
@@ -25,6 +48,11 @@
 
         img {
             border-radius: 18px;
+
+            @media (max-width: 1200px) {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 
