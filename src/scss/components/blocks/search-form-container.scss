@@ -1,0 +1,16 @@
+.search-form-container {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 30px;
+    display: none;
+
+    .current-popup-active {
+        display: block;
+    }
+
+    .search-form {
+        margin: 0;
+        padding: 20px;
+    }
+}

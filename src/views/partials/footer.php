@@ -18,7 +18,7 @@
                 <div class="footer-description">
                     <p>Bang IT Solutions is an Australian-based IT Managed Services company whose local, easy-to-talk technical staff can respond to your project requirements or support issues in a timely and friendly manner.</p>
                     <p>Address: International Tower 3,<br />Level 17/300 Barangaroo Ave, <br />Barangaroo NSW 2000</p>
-                    <p>Email: info@bangitsolutions.com<br />Phone: 1300 770 035</p>
+                    <p>Email: <a href="mailto:info@bangitsolutions.com">info@bangitsolutions.com</a><br />Phone: <a href="tel:1300 770 035">1300 770 035</a></p>
                 </div>
             </div>
             <div class="footer-top-right">
@@ -47,9 +47,9 @@
                     <div class="footer-top-right__item">
                         <h3>Follow Us</h3>
                         <ul class="flex gap-10">
-                            <li><img src="<?=get_template_directory_uri()?>/assets/images/icon-facebook.svg" alt=""></li>
-                            <li><img src="<?=get_template_directory_uri()?>/assets/images/icon-twitter-x.svg" alt=""></li>
-                            <li><img src="<?=get_template_directory_uri()?>/assets/images/icon-linkedin.svg" alt=""></li>
+                            <li><a href="#!" target="_blank"><img src="<?=get_template_directory_uri()?>/assets/images/icon-facebook.svg" alt=""></a></li>
+                            <li><a href="#!" target="_blank"><img src="<?=get_template_directory_uri()?>/assets/images/icon-twitter-x.svg" alt=""></a></li>
+                            <li><a href="#!" target="_blank"><img src="<?=get_template_directory_uri()?>/assets/images/icon-linkedin.svg" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
