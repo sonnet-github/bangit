@@ -81,7 +81,7 @@
                     <!-- Search -->
                     <div class="search-form">
                         <h2>Search here</h2>
-                        <form action="">
+                        <form action="<?=get_site_url()?>" method="get">
                             <div class="form-container form-container--search">
                                 <div class="form-row">
                                     <div class="form-col">

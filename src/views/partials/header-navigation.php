@@ -18,10 +18,10 @@
                 <div class="header-right">
                     <div class="header-right-top">
 
-                        <div class="search-form-container js-popup" id="search-form">
+                        <div class="search-form-container" id="search-form">
                             <div class="search-form-container__inner">
                                 <div class="search-form">
-                                    <form action="">
+                                    <form action="<?=get_site_url()?>" method="get">
                                         <div class="form-container form-container--search">
                                             <div class="form-row">
                                                 <div class="form-col">
