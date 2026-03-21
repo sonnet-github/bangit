@@ -3,6 +3,7 @@ import accordions from './components/Accordions'
 import popup from './components/Popup'
 import navigation from './components/Navigation'
 import slider from './components/Slider'
+import counter from './components/Counter'
 
 document.addEventListener("DOMContentLoaded", function () {
     tabs();
@@ -10,4 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
     popup();
     navigation();
     slider();
+    counter();
 });

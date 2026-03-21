@@ -46,9 +46,9 @@
                                 <?php if(have_rows('badges')): ?>
                                     <div class="our-team__badge flex gap-14 justify-center">
                                         <?php while(have_rows('badges')): the_row(); ?>
-                                            <?php if(get_sub_field('badge')): ?>
+                                            <?php if(get_sub_field('social_url')): ?>
                                                 <div class="our-team__badge-item">
-                                                    <span><?=get_sub_field('badge')?></span>
+                                                    <a href="<?=get_sub_field('social_url')['url']?>" target="_blank"><?=get_sub_field('social_url')['title']?></a>
                                                 </div>
                                             <?php endif; ?>
                                         <?php endwhile; ?>

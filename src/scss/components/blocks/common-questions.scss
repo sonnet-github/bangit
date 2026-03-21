@@ -16,6 +16,12 @@
         line-height: 100%;
     }
 
+    &__heading {
+        h3 {
+            color: #0072DA;
+        }
+    }
+
     h2 {
         font-size: 30px;
         line-height: 100%;
@@ -107,6 +113,13 @@
                 &:before {
                     background-image: url('~/assets/images/icon-faq-close.svg');
                 }
+            }
+
+            h3 {
+                color: #1B3266;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 120%;
             }
         }
     }

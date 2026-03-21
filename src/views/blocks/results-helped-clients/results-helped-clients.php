@@ -8,6 +8,7 @@
  */  
     $subHeading = get_field('subheading') ? get_field('subheading') : "";
     $heading = get_field('heading') ? get_field('heading') : "";
+    $description = get_field('description') ? get_field('description') : "";
 
     // Show preview image in preview mode
     if(get_field('preview_image')) :
@@ -27,6 +28,9 @@
                 <?php endif; ?>
                 <?php if($heading): ?>
                     <h2><?=$heading?></h2>
+                <?php endif; ?>
+                <?php if($description): ?>
+                    <p><?=$description?></p>
                 <?php endif; ?>
             </div>
             

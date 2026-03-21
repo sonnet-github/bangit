@@ -23,13 +23,34 @@
         font-weight: 900;
         color: $blue3;
         margin-top: 9px;
-        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__heading {
+        p {
+            color: #333;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%;
+            max-width: 764px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 35px;
+            margin-top: 15px;
+        }
     }
 
     &__item {
         border-radius: 10px;
         background: rgba(255, 163, 26, 0.20);
         padding: 10px;
+
+        .page-id-11 & {
+            background: rgba(50, 142, 225, 0.20);
+        }
 
         h3 {
             color: $blue3;

@@ -8,6 +8,18 @@
         max-width: 1296px;
     }
 
+    .page-id-27 & {
+        padding-top: 104px;
+    }
+
+    &__heading {
+        margin-bottom: 40px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 25px;
+        }
+    }
+
     h3 {
         color: $blue2;
         font-size: 20px;
